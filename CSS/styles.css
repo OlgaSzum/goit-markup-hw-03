@@ -26,7 +26,7 @@ body {
   color: var(--text);
 }
 
-/* KLASY POMOCNICZE */
+/* AUXILIARY CLASSES */
 
 .container {
   max-width: 1158px;
@@ -54,7 +54,18 @@ body {
   color: var(--pressed-state);
 }
 
+/* MENU */
+
+.topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 24px;
+  flex-wrap: nowrap;
+}
+
 /* LOGO */
+
 .logo__web,
 .logo__studio {
   text-decoration: none;
@@ -70,6 +81,27 @@ body {
 
 .logo__studio {
   color: var(--dark);
+  margin-right: 76px;
+}
+
+.menu-nav {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
+}
+
+.contact {
+  display: flex;
+  gap: 20px;
+  width: 344px;
+  height: 24px;
+}
+
+.contact a {
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 /* NAVBAR BUTTONS */
@@ -88,14 +120,8 @@ body {
   color: var(--pressed-state);
 }
 
-.contact a {
-  font-family: inherit;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text);
-}
-
 /* HERO */
+
 .hero {
   background-color: var(--dark);
 }
