@@ -1,0 +1,194 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color:var(--text)
+}
+
+:root {
+    --primary-brand:#4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F4266;
+    --hero-background: #2E2F42B2;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+}
+
+/* MARGIN RESEST*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* KLASY POMOCNICZE */
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120x;
+}
+
+
+.list {
+    list-style: none;
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, 
+.button:focus {
+color:var(--pressed-state);
+}
+
+/* LOGO */
+.logo__web, .logo__studio {
+text-decoration: none;
+color:var(--primary-brand);
+font-family: "Raleway";
+text-transform: uppercase; 
+text-transform: bold;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+}
+
+.logo__studio {
+    color: var(--dark);
+}
+
+/* NAVBAR BUTTONS */
+
+.menu .button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--dark)
+}
+
+.menu .button:hover,
+.menu .button:focus {
+    color: var(--pressed-state);
+}
+
+.contact a {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--text)
+
+}
+
+/* HERO */
+.hero {
+    background-color:var(--dark);
+}
+
+.hero h1 {
+    color:var(--white-background);
+}
+
+.hero button {
+    background-color:var(--primary-brand);
+    border:none;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    box-shadow:rgba(46, 47, 66, 0.08);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-background);
+}
+
+.hero button:hover,
+.hero button:focus {
+    background-color: var(--pressed-state);
+    box-shadow:rgba(46, 47, 66, 0.16);
+}
+
+
+/* OUR TEAM */
+.our-team {
+    background-color:var(--light);
+}
+
+
+/* PORTFOLIO */
+.gallery h3 {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--dark);
+}
+
+.gallery p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+.filters button {
+    background-color: var(--light);
+    border: 1px;
+    border-color: var(--accent);
+    border-radius: 4px;
+
+    color:var(--primary-brand);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.filters button:hover,
+.filters button:focus {
+    background-color:var(--pressed-state);
+    box-shadow:rgba(0, 0, 0, 0.12);
+    color:var(--white-background);
+}
+
+/*FOOTER*/
+
+.footer__container {
+    background-color: var(--dark);
+}
+.footer__text {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.4;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: var(--light);
+    width: 264px;
+    height: 72px;
+}
+
+.footer__container .logo__studio {
+    color:var(--light)
+}
