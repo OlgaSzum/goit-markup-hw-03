@@ -88,7 +88,7 @@ h3 {
   flex-wrap: nowrap;
 }
 
-/* LOGO */
+/* TOPLINE */
 
 .logo__web,
 .logo__studio {
@@ -117,8 +117,6 @@ h3 {
 .contact {
   display: flex;
   gap: 20px;
-  width: 344px;
-  height: 24px;
 }
 
 .contact a {
@@ -128,6 +126,9 @@ h3 {
   color: var(--text);
 }
 
+.contact .tel {
+  width: 151px;
+}
 /* NAVBAR BUTTONS */
 
 .menu .button {
