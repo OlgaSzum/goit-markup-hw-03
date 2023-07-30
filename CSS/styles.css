@@ -67,6 +67,11 @@ h3 {
   padding-bottom: 120px;
 }
 
+.hero_section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .list {
   list-style: none;
 }
@@ -177,11 +182,17 @@ h3 {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+
+  max-width: 496px;
 }
 
-.hero button {
+.hero_button {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Roboto";
   background-color: var(--primary-brand);
   border: none;
+
   width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -194,8 +205,8 @@ h3 {
   color: var(--white-background);
 }
 
-.hero button:hover,
-.hero button:focus {
+.hero_button:hover,
+.hero_button:focus {
   background-color: var(--pressed-state);
   box-shadow: rgba(46, 47, 66, 0.16);
 }
