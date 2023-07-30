@@ -126,9 +126,10 @@ h3 {
   color: var(--text);
 }
 
-.contact .tel {
+.contact .call {
   width: 151px;
 }
+
 /* NAVBAR BUTTONS */
 
 .menu .button {
