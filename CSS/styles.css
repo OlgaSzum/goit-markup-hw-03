@@ -26,6 +26,10 @@ body {
   color: var(--text);
 }
 
+header {
+  border-bottom: var(--accent) 1px solid;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -128,6 +132,7 @@ h3 {
 
 .contact .call {
   width: 151px;
+  height: 24px;
 }
 
 /* NAVBAR BUTTONS */
@@ -277,9 +282,47 @@ h3 {
 /* PORTFOLIO */
 
 .filters {
-  display: inline-flex;
-  align-items: flex-start;
+  margin-top: -24px;
+  display: flex;
+  justify-content: center;
   gap: 24px;
+  padding-bottom: 72px;
+}
+
+.gallery {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+
+.gallery__card {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.gallery .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery__card-content {
+  display: flex;
+  height: 120px;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  border: 1px solid;
+  border-color: var(--accent);
+  border-top: none;
+  background-color: var(--white-background);
+}
+
+.gallery .img {
+  display: block;
 }
 
 .filters button {
@@ -305,35 +348,4 @@ h3 {
   background-color: var(--pressed-state);
   box-shadow: rgba(0, 0, 0, 0.12);
   color: var(--white-background);
-}
-
-.gallery__card-content {
-  border: 1px solid;
-  border-color: var(--accent);
-  background-color: var(--white-background);
-
-  display: flex;
-  padding: 0px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-
-  margin: 32px 0;
-}
-
-.gallery h3 {
-  color: var(--dark);
-}
-
-.gallery .list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.gallery .img {
-  display: block;
 }
